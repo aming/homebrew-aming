@@ -15,6 +15,9 @@ class Batteries < Formula
   depends_on "exa"
   depends_on "fd"
   depends_on "thefuck"
+  depends_on "nvm" => :recommended
+  depends_on "rbenv" => :recommended
+  depends_on "ruby-build" => :recommended
   depends_on "pyenv" => :recommended
   depends_on "pyenv-virtualenv" => :recommended
   depends_on "jq" => :recommended
