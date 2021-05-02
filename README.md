@@ -1,4 +1,6 @@
-# Aming Aming
+# Homebrew AMing Tap
+
+Homebrew formula for AMing
 
 ## How do I install these formulae?
 
