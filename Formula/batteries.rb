@@ -14,6 +14,14 @@ class Batteries < Formula
   depends_on "git-delta"
   depends_on "exa"
   depends_on "fd"
+  depends_on "procs"
+  depends_on "sd"
+  depends_on "dust"
+  depends_on "hyperfine"
+  depends_on "clementtsang/bottom/bottom"
+  depends_on "bandwhich"
+  depends_on "tldr"
+  depends_on "zoxide"
   depends_on "thefuck"
   depends_on "nvm" => :recommended
   depends_on "rbenv" => :recommended
