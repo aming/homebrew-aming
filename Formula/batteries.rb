@@ -5,9 +5,10 @@ class Batteries < Formula
   homepage "https://github.com/aming/dotfiles"
   url "file:///dev/null"
   sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
+  depends_on "zsh"
   depends_on "fzf"
   depends_on "rg"
   depends_on "bat"
@@ -23,11 +24,9 @@ class Batteries < Formula
   depends_on "tldr"
   depends_on "zoxide"
   depends_on "thefuck"
-  depends_on "nvm" => :recommended
-  depends_on "rbenv" => :recommended
-  depends_on "ruby-build" => :recommended
-  depends_on "pyenv" => :recommended
-  depends_on "pyenv-virtualenv" => :recommended
+  depends_on "asdf"
+  depends_on "vim" => :recommended
+  depends_on "neovim" => :recommended
   depends_on "jq" => :recommended
 
   def install
