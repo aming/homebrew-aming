@@ -5,7 +5,7 @@ class Batteries < Formula
   homepage "https://github.com/aming/dotfiles"
   url "file:///dev/null"
   sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   depends_on "zsh"
@@ -30,6 +30,8 @@ class Batteries < Formula
   depends_on "jq" => :recommended
 
   def install
+    # Resolve cask dependencies
+    system "/usr/local/bin/brew", "install", "--cask", "homebrew/cask-fonts/font-caskaydia-cove-nerd-font"
     (doc+"batteries").write("This is all tools needed by aming/dotfiles")
   end
 
