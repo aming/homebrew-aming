@@ -9,9 +9,11 @@ class Batteries < Formula
   license "MIT"
 
   depends_on "zsh"
+  depends_on "tmux"
   depends_on "fzf"
   depends_on "rg"
   depends_on "bat"
+  depends_on "htop"
   depends_on "git-delta"
   depends_on "exa"
   depends_on "fd"
