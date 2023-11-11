@@ -34,7 +34,7 @@ class Batteries < Formula
 
   def install
     # Resolve cask dependencies
-    system "/opt/homebrew/bin/brew", "install", "--cask", "homebrew/cask-fonts/font-caskaydia-cove-nerd-font"
+    system "#{HOMEBREW_PREFIX}/bin/brew", "install", "--cask", "homebrew/cask-fonts/font-caskaydia-cove-nerd-font"
     (doc+"batteries").write("This is all tools needed by aming/dotfiles")
   end
 
