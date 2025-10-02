@@ -5,7 +5,7 @@ class Batteries < Formula
   homepage "https://github.com/aming/dotfiles"
   url "file:///dev/null"
   sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-  version "1.0.4"
+  version "1.0.6"
   license "MIT"
 
   depends_on "zsh"
@@ -26,15 +26,17 @@ class Batteries < Formula
   depends_on "bandwhich"
   depends_on "tldr"
   depends_on "zoxide"
-  depends_on "thefuck"
   depends_on "asdf"
+  depends_on "uv" => :recommended
   depends_on "vim" => :recommended
   depends_on "neovim" => :recommended
+  depends_on "imagemagick" => :recommended # For displaying image in terminal
   depends_on "jq" => :recommended
+  depends_on "stow" => :recommended  # For install the dotfiles
 
   def install
-    # Resolve cask dependencies
-    system "#{HOMEBREW_PREFIX}/bin/brew", "install", "--cask", "homebrew/cask-fonts/font-caskaydia-cove-nerd-font"
+    # Resolve cask dependencies if any
+    # system "#{HOMEBREW_PREFIX}/bin/brew", "install", "--cask", "font-caskaydia-cove-nerd-font"
     (doc+"batteries").write("This is all tools needed by aming/dotfiles")
   end
 
